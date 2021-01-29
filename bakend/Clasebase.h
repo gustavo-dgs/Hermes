@@ -4,12 +4,14 @@
 
 
 class ClaseBase{
+protected:
+    DBOperacion *dbOperacion;
 
 public:
     ClaseBase();
     ~ClaseBase();
     virtual void crear();
-    virtual void consultar();
+    virtual bool consultar();
     virtual void actualizar();
     virtual void eliminar();
 };

@@ -6,12 +6,24 @@
 
 class Usuario: public Entidad, public ClaseBase{
 private:
-    std::string id_usuario;
+    int id_usuario;
+    std::string tipo_usuario;
 
 public:
     Usuario();
-    Usuario(std::string);
+    Usuario(int, std::string, std::string, std::string, std::string, std::string);
     ~Usuario();
+
+    int getId_usuario() const;
+    void setId_usuario(int value);
+    std::string getTipo_usuario() const;
+    void setTipo_usuario(const std::string &value);
+
+    void crear();
+    bool consultar();
+    void actualizar();
+    void eliminar();
+
 };
 
 #endif // USUARIO_H

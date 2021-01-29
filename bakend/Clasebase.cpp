@@ -1,10 +1,14 @@
 #include "Clasebase.h"
 
-ClaseBase::ClaseBase(){}
-ClaseBase::~ClaseBase(){}
+ClaseBase::ClaseBase(){
+    dbOperacion = new DBOperacion();
+}
+
+ClaseBase::~ClaseBase(){
+    delete dbOperacion;
+}
+
 void ClaseBase::crear(){}
-void ClaseBase::consultar(){}
+bool ClaseBase::consultar(){return false;}
 void ClaseBase::actualizar(){}
 void ClaseBase::eliminar(){}
-
-

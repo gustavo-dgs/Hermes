@@ -20,11 +20,12 @@ private:
     int i;
     std::string query;
 
+    bool isConsulta(const std::string &query);
+
 public:
     DBOperacion();
     ~DBOperacion();
     bool hacerConexion();
-    bool isConsulta(const std::string &query);
     sql::ResultSet* ejecutarQuery(const std::string &);
     void prepararQuery(const std::string &);
     void agregarInt(const int);
