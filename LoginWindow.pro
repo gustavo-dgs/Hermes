@@ -41,3 +41,8 @@ FORMS    += loginwindow.ui \
     signup_customer_dialog.ui \
     signup_commerce_dialog.ui \
     signup_shipping_dialog.ui
+
+unix:!macx: LIBS += -L$$PWD/lib/ -lmysqlcppconn
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.
