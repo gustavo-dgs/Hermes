@@ -13,6 +13,7 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
+    bakend/DBOperacion.cpp \
         loginwindow.cpp \
     mainwindow_dialog.cpp \
     signup_dialog.cpp \
@@ -21,6 +22,7 @@ SOURCES += main.cpp\
     signup_shipping_dialog.cpp
 
 HEADERS  += loginwindow.h \
+    bakend/DBOperacion.h \
     mainwindow_dialog.h \
     signup_dialog.h \
     signup_customer_dialog.h \
