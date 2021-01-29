@@ -15,6 +15,8 @@ TEMPLATE = app
 SOURCES += main.cpp\
     bakend/Clasebase.cpp \
     bakend/DBOperacion.cpp \
+    bakend/Entidad.cpp \
+    bakend/Usuario.cpp \
         loginwindow.cpp \
     mainwindow_dialog.cpp \
     signup_dialog.cpp \
@@ -25,6 +27,8 @@ SOURCES += main.cpp\
 HEADERS  += loginwindow.h \
     bakend/Clasebase.h \
     bakend/DBOperacion.h \
+    bakend/Entidad.h \
+    bakend/Usuario.h \
     mainwindow_dialog.h \
     signup_dialog.h \
     signup_customer_dialog.h \
