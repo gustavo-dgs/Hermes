@@ -10,7 +10,7 @@ DBOperacion::DBOperacion(){
 
 DBOperacion::~DBOperacion(){
     if (prep_stmt != NULL)
-    delete prep_stmt;
+        delete prep_stmt;
 }
 
 bool DBOperacion::hacerConexion(){
