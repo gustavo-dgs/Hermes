@@ -28,6 +28,8 @@ Empresa::Empresa(std::string rif, std::string nombre, std::string direccion,
     this->ranking = 0;
 }
 
+Empresa::~Empresa(){}
+
 std::string Empresa::getRif() const
 {
     return rif;
