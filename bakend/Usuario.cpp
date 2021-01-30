@@ -2,17 +2,35 @@
 
 Usuario::Usuario() : Entidad(){
     id_usuario = 0;
+    contrasena = "";
+    tipo_usuario = "";
 }
 
-Usuario::Usuario(int id_usuario, std::string nombre, std::string direccion, std::string correo,
+Usuario::Usuario(int id_usuario) : Entidad(){
+    this->id_usuario = id_usuario;
+    contrasena = "";
+    tipo_usuario = "";
+}
+
+Usuario::Usuario(int id_usuario, std::string nombre, std::string direccion, std::string correo, std::string contrasena,
                  std::string telefono, std::string tipo_usuario)
                 : Entidad(nombre, direccion, correo, telefono){
 
     this->id_usuario = id_usuario;
     this->tipo_usuario = tipo_usuario;
+    this->contrasena = contrasena;
 }
 
-Usuario::~Usuario(){}
+Usuario::Usuario(std::string nombre, std::string direccion, std::string correo, std::string contrasena,
+                 std::string telefono, std::string tipo_usuario)
+                : Entidad(nombre, direccion, correo, telefono){
+
+    this->id_usuario = 0;
+    this->tipo_usuario = tipo_usuario;
+    this->contrasena = contrasena;
+}
+
+Usuario::~Usuario(){} //delete dbOperacion;
 
 int Usuario::getId_usuario() const
 {
@@ -34,6 +52,16 @@ void Usuario::setTipo_usuario(const std::string &value)
     tipo_usuario = value;
 }
 
+std::string Usuario::getContrasena() const
+{
+    return contrasena;
+}
+
+void Usuario::setContrasena(const std::string &value)
+{
+    contrasena = value;
+}
+
 void Usuario::crear(){
     dbOperacion->prepararQuery("INSERT INTO usuarios (nombre, direccion, correo, telefono, tipo_usuario) "
                                "VALUES(?,?,?,?,?)");
@@ -42,7 +70,7 @@ void Usuario::crear(){
     dbOperacion->agregarString(correo);
     dbOperacion->agregarString(telefono);
     dbOperacion->agregarString(tipo_usuario);
-
+    
     dbOperacion->ejecutar();
 }
 

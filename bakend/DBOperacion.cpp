@@ -1,14 +1,16 @@
 #include "DBOperacion.h"
 
+sql::Connection* DBOperacion::con;
+
 DBOperacion::DBOperacion(){
-    con = NULL;
     prep_stmt = NULL;
     query = "";
     i = 0;
 }
 
 DBOperacion::~DBOperacion(){
-    delete con;
+    if (prep_stmt != NULL)
+    delete prep_stmt;
 }
 
 bool DBOperacion::hacerConexion(){
@@ -17,10 +19,16 @@ bool DBOperacion::hacerConexion(){
         sql::Driver *driver;
         sql::ConnectOptionsMap connection_properties;
 
-        connection_properties["hostName"] = "tcp://remotemysql.com";
+        /*connection_properties["hostName"] = "tcp://remotemysql.com";
         connection_properties["userName"] = "BUFJ4xC2oU";
         connection_properties["password"] = "2RFRR3gbjn";
-        connection_properties["schema"] = "BUFJ4xC2oU";
+        connection_properties["schema"] = "BUFJ4xC2oU";*/
+
+        connection_properties["hostName"] = "127.0.0.1";
+        connection_properties["userName"] = "gustavo";
+        connection_properties["password"] = "Cromatismo12#b";
+        connection_properties["schema"] = "prueba";
+
         connection_properties["port"] = 3306;
         connection_properties["OPT_RECONNECT"] = true;
         connection_properties["OPT_CONNECT_TIMEOUT"] = 10;
@@ -92,15 +100,20 @@ sql::ResultSet* DBOperacion::ejecutar(){
 
     if (!isConsulta(query)){
 
-            prep_stmt->execute(query);
-            res = NULL;
+        prep_stmt->execute();
+        res = NULL;
 
     }else{
 
-        res = prep_stmt->executeQuery(query);
+        res = prep_stmt->executeQuery();
 
     }
 
     delete prep_stmt;
+    prep_stmt = NULL;
     return res;
+}
+
+void DBOperacion::cerrarConexion(){
+    delete con;
 }

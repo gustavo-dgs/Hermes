@@ -9,7 +9,7 @@ protected:
 
 public:
     ClaseBase();
-    ~ClaseBase();
+    virtual ~ClaseBase();
     virtual void crear();
     virtual bool consultar();
     virtual void actualizar();

@@ -15,7 +15,7 @@ using namespace std;
 class DBOperacion{
 
 private:
-    sql::Connection *con;
+    static sql::Connection *con;
     sql::PreparedStatement  *prep_stmt;
     int i;
     std::string query;
@@ -25,12 +25,13 @@ private:
 public:
     DBOperacion();
     ~DBOperacion();
-    bool hacerConexion();
+    static bool hacerConexion();
     sql::ResultSet* ejecutarQuery(const std::string &);
     void prepararQuery(const std::string &);
     void agregarInt(const int);
     void agregarString(const std::string &);
     sql::ResultSet* ejecutar();
+    static void cerrarConexion();
 };
 
 #endif // DBOPERACION_H

@@ -5,19 +5,24 @@
 #include "Entidad.h"
 
 class Usuario: public Entidad, public ClaseBase{
-private:
+protected:
     int id_usuario;
+    std::string contrasena;
     std::string tipo_usuario;
 
 public:
     Usuario();
-    Usuario(int, std::string, std::string, std::string, std::string, std::string);
-    ~Usuario();
+    Usuario(int);
+    Usuario(int, std::string, std::string, std::string, std::string, std::string, std::string);
+    Usuario(std::string, std::string, std::string, std::string, std::string, std::string);
+    virtual ~Usuario();
 
     int getId_usuario() const;
     void setId_usuario(int value);
     std::string getTipo_usuario() const;
     void setTipo_usuario(const std::string &value);
+    std::string getContrasena() const;
+    void setContrasena(const std::string &value);
 
     void crear();
     bool consultar();
