@@ -9,6 +9,6 @@ ClaseBase::~ClaseBase(){
 }
 
 void ClaseBase::crear(){}
-bool ClaseBase::consultar(){return false;}
+bool ClaseBase::consultar(std::string campo, std::string valor){return false;}
 void ClaseBase::actualizar(){}
 void ClaseBase::eliminar(){}

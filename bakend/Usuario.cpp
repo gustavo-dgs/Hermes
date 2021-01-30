@@ -6,12 +6,6 @@ Usuario::Usuario() : Entidad(){
     tipo_usuario = "";
 }
 
-Usuario::Usuario(int id_usuario) : Entidad(){
-    this->id_usuario = id_usuario;
-    contrasena = "";
-    tipo_usuario = "";
-}
-
 Usuario::Usuario(int id_usuario, std::string nombre, std::string direccion, std::string correo, std::string contrasena,
                  std::string telefono, std::string tipo_usuario)
                 : Entidad(nombre, direccion, correo, telefono){
@@ -37,11 +31,6 @@ int Usuario::getId_usuario() const
     return id_usuario;
 }
 
-void Usuario::setId_usuario(int value)
-{
-    id_usuario = value;
-}
-
 std::string Usuario::getTipo_usuario() const
 {
     return tipo_usuario;
@@ -63,33 +52,42 @@ void Usuario::setContrasena(const std::string &value)
 }
 
 void Usuario::crear(){
-    dbOperacion->prepararQuery("INSERT INTO usuarios (nombre, direccion, correo, telefono, tipo_usuario) "
-                               "VALUES(?,?,?,?,?)");
+    dbOperacion->prepararQuery("INSERT INTO usuarios (nombre, direccion, correo, contrasena, telefono, tipo_usuario) "
+                               "VALUES(?,?,?,?,?,?)");
     dbOperacion->agregarString(nombre);
     dbOperacion->agregarString(direccion);
     dbOperacion->agregarString(correo);
+    dbOperacion->agregarString(contrasena);
     dbOperacion->agregarString(telefono);
     dbOperacion->agregarString(tipo_usuario);
     
     dbOperacion->ejecutar();
 }
 
-bool Usuario::consultar(){
+bool Usuario::consultar(std::string campo, std::string valor){
     sql::ResultSet *res;
     bool seEncontro;
 
-    dbOperacion->prepararQuery("SELECT * FROM usuarios WHERE id_usuario=?");
-    dbOperacion->agregarInt(id_usuario);
+    dbOperacion->prepararQuery("SELECT * FROM usuarios WHERE " + campo + "=?");
+    if (campo.compare("id_usuario") == 0){
+        dbOperacion->agregarInt(stoi(valor));
+    }else{
+        dbOperacion->agregarString(valor);
+    }
+
     res = dbOperacion->ejecutar();
 
     if (res->next()){
+        id_usuario = res->getInt("id_usuario");
         nombre = res->getString("nombre");
         direccion = res->getString("direccion");
         correo = res->getString("correo");
+        contrasena = res->getString("contrasena");
         telefono = res->getString("telefono");
         tipo_usuario = res->getString("tipo_usuario");
 
         seEncontro = true;
+
     }else{
         seEncontro = false;
     }
