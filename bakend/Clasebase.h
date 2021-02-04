@@ -9,11 +9,11 @@ protected:
 
 public:
     ClaseBase();
-    virtual ~ClaseBase();
-    virtual void crear();
-    virtual bool consultar(std::string, std::string);
-    virtual void actualizar();
-    virtual void eliminar();
+    virtual ~ClaseBase() = 0;
+    virtual void crear() = 0;
+    virtual bool consultar(std::string, std::string) = 0;
+    virtual void actualizar() = 0;
+    virtual void eliminar() = 0;
 };
 
 #endif // CLASEBASE_H
