@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0'?>
 <ui version="4.0">
- <class>Prueba_Dialog</class>
- <widget class="QDialog" name="Prueba_Dialog">
+ <class>MainCustomerWindow_Dialog</class>
+ <widget name="MainCustomerWindow_Dialog" class="QDialog">
   <property name="geometry">
    <rect>
     <x>0</x>

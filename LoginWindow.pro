@@ -18,18 +18,21 @@ SOURCES += main.cpp\
     signup_dialog.cpp \
     signup_customer_dialog.cpp \
     signup_commerce_dialog.cpp \
-    signup_shipping_dialog.cpp
+    signup_shipping_dialog.cpp \
+    prueba_dialog.cpp
 
 HEADERS  += loginwindow.h \
     mainwindow_dialog.h \
     signup_dialog.h \
     signup_customer_dialog.h \
     signup_commerce_dialog.h \
-    signup_shipping_dialog.h
+    signup_shipping_dialog.h \
+    prueba_dialog.h
 
 FORMS    += loginwindow.ui \
     mainwindow_dialog.ui \
     signup_dialog.ui \
     signup_customer_dialog.ui \
     signup_commerce_dialog.ui \
-    signup_shipping_dialog.ui
+    signup_shipping_dialog.ui \
+    prueba_dialog.ui
