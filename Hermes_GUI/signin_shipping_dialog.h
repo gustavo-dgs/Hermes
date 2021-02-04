@@ -15,8 +15,12 @@ public:
     explicit SignIn_Shipping_Dialog(QWidget *parent = 0);
     ~SignIn_Shipping_Dialog();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::SignIn_Shipping_Dialog *ui;
+
 };
 
 #endif // SIGNIN_SHIPPING_DIALOG_H

@@ -13,8 +13,20 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        loginwindow.cpp
+        loginwindow.cpp \
+    signin_dialog.cpp \
+    signin_customer_dialog.cpp \
+    signin_shipping_dialog.cpp \
+    signin_commerce_dialog.cpp
 
-HEADERS  += loginwindow.h
+HEADERS  += loginwindow.h \
+    signin_dialog.h \
+    signin_customer_dialog.h \
+    signin_shipping_dialog.h \
+    signin_commerce_dialog.h
 
-FORMS    += loginwindow.ui
+FORMS    += loginwindow.ui \
+    signin_dialog.ui \
+    signin_customer_dialog.ui \
+    signin_shipping_dialog.ui \
+    signin_commerce_dialog.ui

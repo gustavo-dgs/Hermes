@@ -15,6 +15,9 @@ public:
     explicit SignIn_Customer_Dialog(QWidget *parent = 0);
     ~SignIn_Customer_Dialog();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::SignIn_Customer_Dialog *ui;
 };
