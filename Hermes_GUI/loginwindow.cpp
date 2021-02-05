@@ -19,4 +19,13 @@ void LoginWindow::on_pushButton_2_clicked()
     hide();
     signin_dialogptr = new SignIn_Dialog(this);
     signin_dialogptr->show();
+
+}
+
+void LoginWindow::on_pushButton_clicked()
+{
+    hide();
+    maincustomerwindow_dialogptr = new MainCustomerWindow_Dialog (this);
+    maincustomerwindow_dialogptr->show();
+
 }

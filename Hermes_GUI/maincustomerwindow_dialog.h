@@ -15,6 +15,9 @@ public:
     explicit MainCustomerWindow_Dialog(QWidget *parent = 0);
     ~MainCustomerWindow_Dialog();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::MainCustomerWindow_Dialog *ui;
 };
