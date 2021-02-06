@@ -16,8 +16,27 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QPushButton" name="pushButton">
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+     </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Volver</string>
      </property>
     </widget>
    </item>
@@ -55,31 +74,82 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <property name="spacing">
-          <number>40</number>
+          <number>0</number>
          </property>
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout">
            <property name="spacing">
             <number>0</number>
            </property>
-           <item alignment="Qt::AlignTop">
-            <widget class="QPushButton" name="pushButton_4">
-             <property name="text">
-              <string>Perfil</string>
-             </property>
-            </widget>
-           </item>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>150</number>
+           </property>
            <item alignment="Qt::AlignTop">
             <widget class="QPushButton" name="pushButton_2">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+             </property>
              <property name="text">
               <string>Agregar Productos</string>
              </property>
             </widget>
            </item>
-           <item alignment="Qt::AlignTop">
+           <item>
             <widget class="QPushButton" name="pushButton_3">
+             <property name="maximumSize">
+              <size>
+               <width>1500</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+             </property>
              <property name="text">
-              <string>Modificar productos</string>
+              <string>Añardir al Almacen</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignTop">
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Ordenes</string>
              </property>
             </widget>
            </item>
@@ -94,6 +164,9 @@
             <number>0</number>
            </property>
           </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget"/>
          </item>
          <item>
           <widget class="QLabel" name="label">

@@ -19,7 +19,10 @@ SOURCES += main.cpp\
     signin_shipping_dialog.cpp \
     signin_commerce_dialog.cpp \
     maincustomerwindow_dialog.cpp \
-    maincommercewindow_dialog.cpp
+    maincommercewindow_dialog.cpp \
+    mainshippingwindow_dialog.cpp \
+    warehousewindow_dialog.cpp \
+    adminwindow_dialog.cpp
 
 HEADERS  += loginwindow.h \
     signin_dialog.h \
@@ -27,7 +30,10 @@ HEADERS  += loginwindow.h \
     signin_shipping_dialog.h \
     signin_commerce_dialog.h \
     maincustomerwindow_dialog.h \
-    maincommercewindow_dialog.h
+    maincommercewindow_dialog.h \
+    mainshippingwindow_dialog.h \
+    warehousewindow_dialog.h \
+    adminwindow_dialog.h
 
 FORMS    += loginwindow.ui \
     signin_dialog.ui \
@@ -35,4 +41,7 @@ FORMS    += loginwindow.ui \
     signin_shipping_dialog.ui \
     signin_commerce_dialog.ui \
     maincustomerwindow_dialog.ui \
-    maincommercewindow_dialog.ui
+    maincommercewindow_dialog.ui \
+    mainshippingwindow_dialog.ui \
+    warehousewindow_dialog.ui \
+    adminwindow_dialog.ui
