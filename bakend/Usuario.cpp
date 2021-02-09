@@ -118,4 +118,8 @@ void Usuario::eliminar(){
     dbOperacion->ejecutar();
 }
 
+bool Usuario::iniciarSesion(std::string correo, std::string contrasena){
 
+    return consultar("correo", correo) && this->contrasena.compare(contrasena)==0;
+
+}
