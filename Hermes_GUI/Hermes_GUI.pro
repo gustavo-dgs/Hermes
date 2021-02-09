@@ -16,32 +16,41 @@ SOURCES += main.cpp\
         loginwindow.cpp \
     signin_dialog.cpp \
     signin_customer_dialog.cpp \
-    signin_shipping_dialog.cpp \
     signin_commerce_dialog.cpp \
     maincustomerwindow_dialog.cpp \
-    maincommercewindow_dialog.cpp \
-    mainshippingwindow_dialog.cpp \
-    warehousewindow_dialog.cpp \
-    adminwindow_dialog.cpp
+    registroproductos_window.cpp \
+    productowindow.cpp \
+    listaproductoswindow.cpp \
+    carritowindow.cpp \
+    clientewindow.cpp \
+    mensajewindow.cpp \
+    mainshippingwindow_dialog.cpp
 
 HEADERS  += loginwindow.h \
     signin_dialog.h \
     signin_customer_dialog.h \
-    signin_shipping_dialog.h \
     signin_commerce_dialog.h \
     maincustomerwindow_dialog.h \
-    maincommercewindow_dialog.h \
-    mainshippingwindow_dialog.h \
-    warehousewindow_dialog.h \
-    adminwindow_dialog.h
+    registroproductos_window.h \
+    productowindow.h \
+    listaproductoswindow.h \
+    carritowindow.h \
+    clientewindow.h \
+    mensajewindow.h \
+    mainshippingwindow_dialog.h
 
 FORMS    += loginwindow.ui \
     signin_dialog.ui \
     signin_customer_dialog.ui \
-    signin_shipping_dialog.ui \
     signin_commerce_dialog.ui \
     maincustomerwindow_dialog.ui \
-    maincommercewindow_dialog.ui \
-    mainshippingwindow_dialog.ui \
-    warehousewindow_dialog.ui \
-    adminwindow_dialog.ui
+    registroproductos_window.ui \
+    productowindow.ui \
+    listaproductoswindow.ui \
+    carritowindow.ui \
+    clientewindow.ui \
+    mensajewindow.ui \
+    mainshippingwindow_dialog.ui
+
+RESOURCES += \
+    hermes_imagenes.qrc

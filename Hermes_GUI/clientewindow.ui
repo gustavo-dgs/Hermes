@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClienteWindow</class>
+ <widget class="QDialog" name="ClienteWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(27, 39, 50, 255),stop:1 rgba(47, 53, 74, 255));
+	color: #000000;
+
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>170</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>170</width>
+     <height>70</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: transparent;
+
+
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="hermes_imagenes.qrc">:/Logo oficial Hermes(1).png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonCategorias">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Categorias</string>
+   </property>
+   <property name="icon">
+    <iconset resource="hermes_imagenes.qrc">
+     <normaloff>:/categorias.png</normaloff>:/categorias.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonTienda">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>110</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Tiendas</string>
+   </property>
+   <property name="icon">
+    <iconset resource="hermes_imagenes.qrc">
+     <normaloff>:/tiendita.png</normaloff>:/tiendita.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonEstadoOrdenes">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>110</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Estado de ordenes</string>
+   </property>
+   <property name="icon">
+    <iconset resource="hermes_imagenes.qrc">
+     <normaloff>:/ordenes-de-compra(1).png</normaloff>:/ordenes-de-compra(1).png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonProductos">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>110</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Productos</string>
+   </property>
+   <property name="icon">
+    <iconset resource="hermes_imagenes.qrc">
+     <normaloff>:/productos.png</normaloff>:/productos.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetProductos">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>601</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	
+	
+	
+	selection-background-color: rgb(253, 66, 66);
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="barraBusqueda">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>70</y>
+     <width>371</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	
+	background-color: #FFFFFF;
+	color: #000;
+	font-weight: bold;
+	border: 2px solid gray;
+	border-radius: 5px;
+	padding: 3px;
+
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonBusqueda">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>70</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="hermes_imagenes.qrc">
+     <normaloff>:/índice.png</normaloff>:/índice.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 22px;
+	font-weight: bold;
+
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Bienvenid@ Kharen</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetLimpieza">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>170</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	
+	
+	
+	selection-background-color: rgb(253, 66, 66);
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetBebidas">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>170</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	
+	
+	
+	selection-background-color: rgb(253, 66, 66);
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetComida">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	
+	
+	
+	selection-background-color: rgb(253, 66, 66);
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetCuidadoP">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>350</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	
+	
+	
+	selection-background-color: rgb(253, 66, 66);
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetEntretenimiento">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>350</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+	
+	
+	
+	selection-background-color: rgb(253, 66, 66);
+
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="hermes_imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

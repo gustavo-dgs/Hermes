@@ -19,13 +19,36 @@ void LoginWindow::on_pushButton_2_clicked()
     hide();
     signin_dialogptr = new SignIn_Dialog(this);
     signin_dialogptr->show();
+}
+
+void LoginWindow::on_pushkharen_clicked()
+{
+    //ProductoWindow *ventana1
+    ventana1 = new ProductoWindow(this);
+    ventana1 -> hide();
+    ventana1 ->show();
+
+    //ventana1 -> setVisible(true);
+
 
 }
 
-void LoginWindow::on_pushButton_clicked()
+void LoginWindow::on_pushButton_3_clicked()
 {
+    clientePtr = new ClienteWindow(this);
     hide();
-    maincustomerwindow_dialogptr = new MainCustomerWindow_Dialog (this);
-    maincustomerwindow_dialogptr->show();
+    clientePtr ->show();
+}
+
+void LoginWindow::on_cajetinCorreo_cursorPositionChanged(int arg1, int arg2)
+{
+    //i->cajetinCorreo->setText("");
+    ui->cajetinCorreo->selectAll();
+}
+
+void LoginWindow::on_cajetinID_cursorPositionChanged(int arg1, int arg2)
+{
+    ui->cajetinID->setText("");
+    ui->cajetinID->Password;
 
 }

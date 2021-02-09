@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Logo Hermes.png</file>
+        <file>Logo oficial Hermes(1).png</file>
+        <file>categorias.png</file>
+        <file>photo4965590516620175554.jpg</file>
+        <file>photo4965590516620175554.png</file>
+        <file>Logo oficial Hermes(3).png</file>
+        <file>Logo oficial Hermes(2).png</file>
+        <file>índice.png</file>
+        <file>tiendita.png</file>
+        <file>productos.png</file>
+        <file>back.png</file>
+        <file>paga.png</file>
+        <file>ordenes-de-compra(1).png</file>
+        <file>papelerita.png</file>
+        <file>usuariosito.png</file>
+        <file>transportico.png</file>
+        <file>mensajito.png</file>
+        <file>papeleritax.png</file>
+    </qresource>
+</RCC>

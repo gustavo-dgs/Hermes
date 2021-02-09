@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Logo Hermes.png</file>
+    </qresource>
+</RCC>

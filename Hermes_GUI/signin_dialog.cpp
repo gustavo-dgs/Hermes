@@ -42,10 +42,4 @@ void SignIn_Dialog::on_pushButton_3_clicked()
 
 }
 
-void SignIn_Dialog::on_pushButton_clicked()
-{
-    hide();
-    SignIn_Shipping_Dialogptr = new SignIn_Shipping_Dialog (this);
-    SignIn_Shipping_Dialogptr->show();
 
-}

@@ -13,19 +13,22 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QPushButton" name="pushButton">
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Volver</string>
      </property>
     </widget>
    </item>
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <property name="spacing">
-      <number>0</number>
-     </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
      <property name="leftMargin">
       <number>20</number>
      </property>
@@ -38,46 +41,6 @@
      <property name="bottomMargin">
       <number>20</number>
      </property>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <item>
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="maximumSize">
-          <size>
-           <width>150</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Transportistas</string>
-         </property>
-        </widget>
-       </item>
-       <item alignment="Qt::AlignLeft">
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="maximumSize">
-          <size>
-           <width>150</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Ordenes</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QListView" name="listView"/>
-       </item>
-      </layout>
-     </item>
     </layout>
    </item>
   </layout>

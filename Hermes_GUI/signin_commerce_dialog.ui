@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>632</width>
+    <height>454</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,38 +21,70 @@
 
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_5">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <property name="spacing">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
       <number>0</number>
      </property>
-     <property name="leftMargin">
-      <number>20</number>
-     </property>
-     <property name="topMargin">
-      <number>20</number>
-     </property>
      <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
       <number>20</number>
      </property>
-     <property name="bottomMargin">
-      <number>20</number>
-     </property>
-     <item>
+     <item row="0" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="label_8">
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+
+
+
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="hermes_imagenes.qrc">:/Logo oficial Hermes(1).png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
       <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="maximumSize">
         <size>
          <width>200</width>
-         <height>16777215</height>
+         <height>40</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton
 {
 	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
 	color: #fff;
-	font-size: 11px;
+	font-size: 18px;
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
@@ -61,343 +93,454 @@
 }</string>
        </property>
        <property name="text">
-        <string>Back</string>
+        <string>Atras</string>
+       </property>
+       <property name="icon">
+        <iconset resource="hermes_imagenes.qrc">
+         <normaloff>:/back.png</normaloff>:/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_9">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>250</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+
+
+}</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Registro de empresa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Por favor, llene todos los campos presentados a continuacion:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item>
-      <layout class="QFormLayout" name="formLayout">
-       <property name="fieldGrowthPolicy">
-        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
-       <property name="horizontalSpacing">
-        <number>6</number>
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>0</height>
+        </size>
        </property>
-       <property name="verticalSpacing">
-        <number>28</number>
+       <property name="maximumSize">
+        <size>
+         <width>410</width>
+         <height>40</height>
+        </size>
        </property>
-       <property name="topMargin">
-        <number>14</number>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
        </property>
-       <property name="bottomMargin">
-        <number>10</number>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
        </property>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
+       <property name="styleSheet">
+        <string notr="true">QLabel
 {
 	background-color: transparent;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 16px;
 
 }</string>
-         </property>
-         <property name="text">
-          <string>Name</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_2">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
-{
-	background-color: transparent;
-	color: #ffffff;
-	font-size: 14px;
-
-}</string>
-         </property>
-         <property name="text">
-          <string>RIF</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_3">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
-{
-	background-color: transparent;
-	color: #ffffff;
-	font-size: 14px;
-
-}</string>
-         </property>
-         <property name="text">
-          <string>Address</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_3">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_4">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
-{
-	background-color: transparent;
-	color: #ffffff;
-	font-size: 14px;
-
-}</string>
-         </property>
-         <property name="text">
-          <string>Phone Numer</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_4">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_5">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
-{
-	background-color: transparent;
-	color: #ffffff;
-	font-size: 14px;
-
-}</string>
-         </property>
-         <property name="text">
-          <string>Gmail</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="label_6">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
-{
-	background-color: transparent;
-	color: #ffffff;
-	font-size: 14px;
-
-}</string>
-         </property>
-         <property name="text">
-          <string>Confirm Gmail</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
-        <widget class="QLineEdit" name="lineEdit_5">
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLineEdit" name="lineEdit_6">
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="label_7">
-         <property name="font">
-          <font>
-           <pointsize>-1</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel
-{
-	background-color: transparent;
-	color: #ffffff;
-	font-size: 14px;
-
-}</string>
-         </property>
-         <property name="text">
-          <string>Manager ID</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="QLineEdit" name="lineEdit_7">
-         <property name="styleSheet">
-          <string notr="true">QLineEdit
-{
-	background-color: #c2c7d5;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 2px;
-	padding: 3px;
-
-}</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       </property>
+       <property name="text">
+        <string>Direccion</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="styleSheet">
-          <string notr="true">QPushButton
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>410</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Correo e.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>410</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Confirme su correo e</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>410</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>410</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>No. telefono</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>410</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item alignment="Qt::AlignRight">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>410</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
 {
 	background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(54, 197, 177, 255));
 	color: #fff;
-	font-size: 11px;
+	font-size: 18px;
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
 	padding: 5px;
 
 }</string>
-         </property>
-         <property name="text">
-          <string>Sign In</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       </property>
+       <property name="text">
+        <string>Inicie sesion</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
   </layout>
+  <zorder>gridLayoutWidget</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label_8</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>horizontalLayoutWidget_2</zorder>
+  <zorder>horizontalLayoutWidget_3</zorder>
+  <zorder>horizontalLayoutWidget_4</zorder>
+  <zorder>horizontalLayoutWidget_5</zorder>
+  <zorder>horizontalLayoutWidget_6</zorder>
+  <zorder>lineEdit_5</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>verticalLayoutWidget_2</zorder>
+  <zorder>label_7</zorder>
+  <zorder>horizontalLayoutWidget_6</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>label_9</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="hermes_imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>
