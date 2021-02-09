@@ -132,3 +132,29 @@ void Producto::modificarStock(int value){
 
     dbOperacion->ejecutar();
 }
+
+list<Producto> Producto::getListaProducto(string rif){
+    sql::ResultSet *res;
+    DBOperacion* dbOperacion = new DBOperacion();
+    int id_producto;
+    std::stringstream ss;
+    std::string str;
+    Producto producto;
+    list<Producto> lista;
+
+    dbOperacion->prepararQuery("SELECT * FROM productos WHERE tienda=?");
+    dbOperacion->agregarString(rif);
+    res = dbOperacion->ejecutar();
+
+    while (res->next()){
+        id_producto = res->getInt("id_producto");
+        ss << id_producto;
+        ss >> str;
+        producto.consultar("id_producto", str);
+        lista.push_back(producto);
+    }
+
+    delete dbOperacion;
+
+    return lista;
+}

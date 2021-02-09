@@ -18,6 +18,7 @@ SOURCES += main.cpp\
     bakend/Empresa.cpp \
     bakend/Entidad.cpp \
     bakend/Herramientas.cpp \
+    bakend/ListaOrdenesCompra.cpp \
     bakend/Orden.cpp \
     bakend/OrdenCompra.cpp \
     bakend/Producto.cpp \
@@ -36,6 +37,7 @@ HEADERS  += loginwindow.h \
     bakend/Empresa.h \
     bakend/Entidad.h \
     bakend/Herramientas.h \
+    bakend/ListaOrdenesCompra.h \
     bakend/Orden.h \
     bakend/OrdenCompra.h \
     bakend/Producto.h \

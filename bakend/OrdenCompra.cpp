@@ -77,6 +77,9 @@ void OrdenCompra::crear(){
 }
 
 bool OrdenCompra::consultar(std::string campo, std::string valor){
+
+    Orden::consultar(campo, valor);
+
     sql::ResultSet *res;
     bool seEncontro;
 

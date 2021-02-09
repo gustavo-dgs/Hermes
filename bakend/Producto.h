@@ -4,10 +4,11 @@
 #include "Clasebase.h"
 #include "Usuario.h"
 #include "Empresa.h"
+#include "sstream"
 
 class Producto : public ClaseBase{
 
- protected:
+protected:
     int id_producto;
     std::string tienda;
     std::string descripcion;
@@ -38,6 +39,7 @@ public:
     void eliminar();
 
     void modificarStock(int);
+    list<Producto> getListaProducto(string rif);
 };
 
 #endif
