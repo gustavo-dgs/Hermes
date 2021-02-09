@@ -19,16 +19,10 @@ bool DBOperacion::hacerConexion(){
         sql::Driver *driver;
         sql::ConnectOptionsMap connection_properties;
 
-        /*connection_properties["hostName"] = "tcp://remotemysql.com";
+        connection_properties["hostName"] = "tcp://remotemysql.com";
         connection_properties["userName"] = "BUFJ4xC2oU";
         connection_properties["password"] = "2RFRR3gbjn";
-        connection_properties["schema"] = "BUFJ4xC2oU";*/
-
-        connection_properties["hostName"] = "127.0.0.1";
-        connection_properties["userName"] = "gustavo";
-        connection_properties["password"] = "Cromatismo12#b";
-        connection_properties["schema"] = "prueba";
-
+        connection_properties["schema"] = "BUFJ4xC2oU";
         connection_properties["port"] = 3306;
         connection_properties["OPT_RECONNECT"] = true;
         connection_properties["OPT_CONNECT_TIMEOUT"] = 10;
