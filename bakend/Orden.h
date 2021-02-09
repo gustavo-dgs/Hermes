@@ -4,6 +4,7 @@
 #include "Clasebase.h"
 #include "Usuario.h"
 #include "Empresa.h"
+#include "Herramientas.h"
 
 class Orden : public Entidad, public ClaseBase{
     protected: int id_orden;
@@ -15,7 +16,9 @@ class Orden : public Entidad, public ClaseBase{
     std::string tipo;
 public:
     Orden();
-    Orden(int,std::string,int,std::string,int,std::string,std::string);
+    Orden(int id_orden, std::string tienda, int transportista,
+                std::string estatus, int calificacion, std::string tipo);
+    Orden(int tienda, std::string tipo);
     ~Orden();
 
     int getId_orden()const;
@@ -41,9 +44,7 @@ public:
     void actualizarOrdenAEnEnvio();
     void actualizarOrdenAEntregada();
     void cancelarOrden();
-    void añadirProducto();
 
 };
 
 #endif
-#include "ClaseBase.h"

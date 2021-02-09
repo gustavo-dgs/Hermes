@@ -6,7 +6,9 @@
 #include "Empresa.h"
 
 class Producto : public ClaseBase{
-    protected: int id_producto;
+
+ protected:
+    int id_producto;
     std::string tienda;
     std::string descripcion;
     int precio;
@@ -14,8 +16,8 @@ class Producto : public ClaseBase{
     int id_categoria;
 public:
     Producto();
-    Producto(int,std::string,std::string,int,int,std::string);
-    ~Prodcuto();
+    Producto(int,std::string,std::string,int,int,int);
+    ~Producto();
 
     int getId_producto()const;
     void setId_producto(int value);
@@ -39,4 +41,3 @@ public:
 };
 
 #endif
-#include "ClaseBase.h"

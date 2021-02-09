@@ -17,6 +17,11 @@ SOURCES += main.cpp\
     bakend/DBOperacion.cpp \
     bakend/Empresa.cpp \
     bakend/Entidad.cpp \
+    bakend/Herramientas.cpp \
+    bakend/Orden.cpp \
+    bakend/OrdenCompra.cpp \
+    bakend/Producto.cpp \
+    bakend/PruebaMain.cpp \
     bakend/Usuario.cpp \
         loginwindow.cpp \
     mainwindow_dialog.cpp \
@@ -30,6 +35,11 @@ HEADERS  += loginwindow.h \
     bakend/DBOperacion.h \
     bakend/Empresa.h \
     bakend/Entidad.h \
+    bakend/Herramientas.h \
+    bakend/Orden.h \
+    bakend/OrdenCompra.h \
+    bakend/Producto.h \
+    bakend/ProductoCantidad.h \
     bakend/Usuario.h \
     mainwindow_dialog.h \
     signup_dialog.h \
@@ -48,3 +58,6 @@ unix:!macx: LIBS += -L$$PWD/lib/ -lmysqlcppconn
 
 INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.
+
+DISTFILES += \
+    bakend/out
