@@ -13,6 +13,17 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
+    bakend/Clasebase.cpp \
+    bakend/DBOperacion.cpp \
+    bakend/Empresa.cpp \
+    bakend/Entidad.cpp \
+    bakend/Herramientas.cpp \
+    bakend/ListaOrdenesCompra.cpp \
+    bakend/Orden.cpp \
+    bakend/OrdenCompra.cpp \
+    bakend/Producto.cpp \
+    bakend/PruebaMain.cpp \
+    bakend/Usuario.cpp \
         loginwindow.cpp \
     signin_dialog.cpp \
     signin_customer_dialog.cpp \
@@ -27,6 +38,16 @@ SOURCES += main.cpp\
     mainshippingwindow_dialog.cpp
 
 HEADERS  += loginwindow.h \
+    bakend/Clasebase.h \
+    bakend/DBOperacion.h \
+    bakend/Empresa.h \
+    bakend/Entidad.h \
+    bakend/Herramientas.h \
+    bakend/ListaOrdenesCompra.h \
+    bakend/Orden.h \
+    bakend/OrdenCompra.h \
+    bakend/Producto.h \
+    bakend/Usuario.h \
     signin_dialog.h \
     signin_customer_dialog.h \
     signin_commerce_dialog.h \
@@ -54,3 +75,14 @@ FORMS    += loginwindow.ui \
 
 RESOURCES += \
     hermes_imagenes.qrc
+
+DISTFILES += \
+    bakend/out \
+    lib/libmysqlcppconn.so
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/lib/release/ -lmysqlcppconn
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/lib/debug/ -lmysqlcppconn
+else:unix: LIBS += -L$$PWD/lib/ -lmysqlcppconn
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.
