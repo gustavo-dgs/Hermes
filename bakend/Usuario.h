@@ -27,6 +27,7 @@ public:
     bool consultar(std::string, std::string);
     void actualizar();
     void eliminar();
+    bool iniciarSesion(std::string correo, std::string contrasena);
 
 };
 
