@@ -19,19 +19,21 @@ public:
     ~SignIn_Dialog();
 
 private slots:
-    void on_pushButton_4_clicked();
 
-    void on_pushButton_2_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_botonCliente_clicked();
 
-    void on_pushButton_clicked();
+    void on_botonTrasporte_clicked();
 
+    void on_botonTienda_clicked();
+
+    void on_botonAtras_clicked();
+public:
+    int typeUser = 0;
 private:
     Ui::SignIn_Dialog *ui;
     SignIn_Commerce_Dialog* SignIn_Commerce_Dialogptr;
     SignIn_Customer_Dialog* SignIn_Customer_Dialogptr;
-
 };
 
 #endif // SIGNIN_DIALOG_H

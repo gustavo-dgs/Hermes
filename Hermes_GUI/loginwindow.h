@@ -28,7 +28,17 @@ private slots:
 
     void on_cajetinID_cursorPositionChanged(int arg1, int arg2);
 
-private:
+    void on_botonRegistro_clicked();
+
+    void on_botonInicioSesion_clicked();
+
+    void on_RegistroBoton_clicked();
+
+    void on_BotonCliente_clicked();
+
+    void on_botonTransporte_clicked();
+
+public:
     Ui::LoginWindow *ui;
     SignIn_Dialog* signin_dialogptr;
     ProductoWindow* ventana1;

@@ -1,5 +1,8 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
+#include "signin_dialog.h"
+#include "clientewindow.h"
+#include "transportehome.h"
 
 LoginWindow::LoginWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,42 +16,28 @@ LoginWindow::~LoginWindow()
     delete ui;
 }
 
-void LoginWindow::on_pushButton_2_clicked()
-{
 
-    hide();
+
+
+void LoginWindow::on_RegistroBoton_clicked()
+{
     signin_dialogptr = new SignIn_Dialog(this);
+    hide();
     signin_dialogptr->show();
 }
 
-void LoginWindow::on_pushkharen_clicked()
+void LoginWindow::on_BotonCliente_clicked()
 {
-    //ProductoWindow *ventana1
-    ventana1 = new ProductoWindow(this);
-    ventana1 -> hide();
-    ventana1 ->show();
-
-    //ventana1 -> setVisible(true);
+   clientePtr = new ClienteWindow();
+   hide();
+   clientePtr->show();
 
 
 }
 
-void LoginWindow::on_pushButton_3_clicked()
+void LoginWindow::on_botonTransporte_clicked()
 {
-    clientePtr = new ClienteWindow(this);
+    TransporteHome *transporteHomePtr = new TransporteHome(this);
     hide();
-    clientePtr ->show();
-}
-
-void LoginWindow::on_cajetinCorreo_cursorPositionChanged(int arg1, int arg2)
-{
-    //i->cajetinCorreo->setText("");
-    ui->cajetinCorreo->selectAll();
-}
-
-void LoginWindow::on_cajetinID_cursorPositionChanged(int arg1, int arg2)
-{
-    ui->cajetinID->setText("");
-    ui->cajetinID->Password;
-
+    transporteHomePtr->show();
 }

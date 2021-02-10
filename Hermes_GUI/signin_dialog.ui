@@ -78,7 +78,7 @@
         </layout>
        </item>
        <item alignment="Qt::AlignRight">
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="botonAtras">
          <property name="maximumSize">
           <size>
            <width>100</width>
@@ -168,7 +168,7 @@
         <number>20</number>
        </property>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="botonCliente">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -217,7 +217,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="botonTrasporte">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -266,7 +266,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="botonTienda">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
            <horstretch>0</horstretch>
